@@ -4,7 +4,6 @@ ARG APP_DIR=/usr/src/node_playground
 RUN mkdir -p $APP_DIR
 WORKDIR $APP_DIR
 
-# Install app dependencies
 COPY package.json $APP_DIR
 RUN npm install
 

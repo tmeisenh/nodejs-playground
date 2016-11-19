@@ -7,9 +7,10 @@ help:
 
 build:
 	@docker build -t oracle-node .
+	@docker network create bridge
 
 clean:
 	@docker rm -f oracle-node
 
 run:
-	@docker run -d --name oracle-node -p 3000:3000 oracle-node
+	@docker run -d --name oracle-node --network bridge -p 3000:3000 oracle-node
