@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node ./src/server.js",
-    "test": "node_modules/mocha/bin/_mocha --reporter spec test/**/*.js"
+    "test": "node_modules/mocha/bin/_mocha --reporter spec --recursive "
   },
   "author": "",
   "license": "ISC",
